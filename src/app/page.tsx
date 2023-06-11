@@ -7,7 +7,7 @@ const getUsers = async () => {
   const users = await res.json()
   return users.data
 }
-
+  
 export default async function Home() {
   const users = await getUsers()
   return (
